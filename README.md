@@ -304,6 +304,7 @@ while number >= 1:
         continue
     print(number)
 ```
+
 ```
 5
 4
@@ -315,6 +316,7 @@ while number >= 1:
 for i in range(5):
     print(i)
 ```
+
 ```
 0
 1
@@ -322,3 +324,47 @@ for i in range(5):
 3
 4
 ```
+
+## Cấu trúc dữ liệu
+
+### List []
+
+Là một 'biến' có thể lưu trữ nhiều biến và mỗi biến có thể có nhiều kiểu dữ liệu khác nhau. 
+
+Nó được sắp xếp và có khả năng thay đổi được, cho phép lặp dữ liệu (duplicate).
+
+```python
+list = ['Python', 25, 9.3, 25]
+```
+
+Một số phương thức (method) cơ bản đối với list:
+
+Ta có thể sử dụng hàm `dir` hoặc `help` để hiển thị được toàn bộ phương thức của nó.
+
+```python
+print(dir(list)) # Chỉ show tên phương thức
+print(help(list)) # Show ra cách sử dụng phương thức chi tiết
+```
+
+### Tuple ()
+
+Là một 'biến' có thể lưu trữ nhiều biến và mỗi biến có thể có nhiều kiểu dữ liệu khác nhau.
+
+Nó được sắp xếp và có tính bất biến (không thể bị thay đổi và sửa đổi). Cho phép lặp dữ liệu. Khả năng truy cập nhanh.
+
+Một số phương thức cơ bản đối với tuple:
+
+### Set {}
+
+Là một 'biến' có thể lưu trữ nhiều biến và mỗi biến có thể có nhiều kiểu dữ liệu khác nhau. 
+
+Nó không được sắp xếp và có tính bất biến nhưng có thể thêm hoặc xoá (Add/Remove), không cho phép lặp dữ liệu (no duplicate).
+
+Một số phương thức (method) cơ bản đối với set:
+
+
+### Dict {key:value}
+
+Là một 'biến' lưu trữ dữ liệu dưới dạng cặp key:value.
+
+Nó có thể sắp xếp được và thay đổi được. Không cho phép duplicate.
