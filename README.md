@@ -1,53 +1,68 @@
 # Fundamentals of Python
 
 # Table of Content
-- [Fundamentals of Python](#fundamentals-of-python)
-- [Table of Content](#table-of-content)
-  - [1. Chương trình đầu tiên](#1-chương-trình-đầu-tiên)
-  - [2. Cú pháp của Python](#2-cú-pháp-của-python)
+- [1. Chương trình đầu tiên](#1-chương-trình-đầu-tiên)
+- [2. Cú pháp của Python](#2-cú-pháp-của-python)
     - [2.1. Từ khoá (keyword)](#21-từ-khoá-keyword)
     - [2.2. Chú thích (comment)](#22-chú-thích-comment)
     - [2.3. Dấu ' và "](#23-dấu--và-)
     - [2.4. Căn lề](#24-căn-lề)
     - [2.5. Viết câu lệnh](#25-viết-câu-lệnh)
-  - [3. Biến (Variable)](#3-biến-variable)
+- [3. Biến (Variable)](#3-biến-variable)
     - [3.1. Một số biến cơ bản.](#31-một-số-biến-cơ-bản)
     - [3.2. Ép kiểu (Type casting)](#32-ép-kiểu-type-casting)
     - [3.3. User input](#33-user-input)
-  - [4. Toán tử (arithmetic operator)](#4-toán-tử-arithmetic-operator)
+- [4. Toán tử (arithmetic operator)](#4-toán-tử-arithmetic-operator)
     - [4.1. Phép toán số học](#41-phép-toán-số-học)
     - [4.2. Toán tử so sánh](#42-toán-tử-so-sánh)
     - [4.3. Phép gán](#43-phép-gán)
     - [4.4. Toán tử logic](#44-toán-tử-logic)
-  - [5. Cấu trúc điều khiển (Flow control)](#5-cấu-trúc-điều-khiển-flow-control)
+- [5. Cấu trúc điều khiển (Flow control)](#5-cấu-trúc-điều-khiển-flow-control)
     - [5.1. if..else stament](#51-ifelse-stament)
     - [5.2. match-case (python 3.10+)](#52-match-case-python-310)
-  - [6. Cấu trúc lặp](#6-cấu-trúc-lặp)
+- [6. Cấu trúc lặp](#6-cấu-trúc-lặp)
     - [6.1. Vòng lặp while](#61-vòng-lặp-while)
     - [6.2. Lệnh điều khiển vòng lặp.](#62-lệnh-điều-khiển-vòng-lặp)
     - [6.3. Vòng lặp for](#63-vòng-lặp-for)
-  - [7. Cấu trúc dữ liệu](#7-cấu-trúc-dữ-liệu)
+- [7. Cấu trúc dữ liệu](#7-cấu-trúc-dữ-liệu)
     - [7.1. List \[\]](#71-list-)
     - [7.2. Tuple ()](#72-tuple-)
     - [7.3. Set {}](#73-set-)
-      - [7.3.1. set](#731-set)
-      - [7.3.2. frozenset](#732-frozenset)
+        - [7.3.1. set](#731-set)
+        - [7.3.2. frozenset](#732-frozenset)
     - [7.4. Dict {}](#74-dict-)
-  - [8. Hàm (Function)](#8-hàm-function)
+- [8. Hàm (Function)](#8-hàm-function)
     - [8.1. Phạm vi biến](#81-phạm-vi-biến)
     - [8.2. Hàm với tham số.](#82-hàm-với-tham-số)
     - [8.3. Hàm với giá trị trả về.](#83-hàm-với-giá-trị-trả-về)
     - [8.4. Hàm với tham số mặc định.](#84-hàm-với-tham-số-mặc-định)
     - [8.5. Hàm với tham số không cố định.](#85-hàm-với-tham-số-không-cố-định)
     - [8.6. Hàm đệ quy (Recursive Function).](#86-hàm-đệ-quy-recursive-function)
-    - [8.7. Hàm lambda](#87-hàm-lambda)
-  - [9. File](#9-file)
-    - [9.1. Mở file:](#91-mở-file)
-    - [9.2. Thao tác với file:](#92-thao-tác-với-file)
-    - [9.3. Đóng file](#93-đóng-file)
-  - [10. Module](#10-module)
-    - [10.1 Module](#101-module)
-    - [10.2. `if __name__ = '__main__'`](#102-if-__name__--__main__)
+    - [8.7. Hàm Lambda](#87-hàm-lambda)
+- [9. File](#9-file)
+- [9.1. Mở file:](#91-mở-file)
+- [9.2. Thao tác với file:](#92-thao-tác-với-file)
+- [9.3. Đóng file](#93-đóng-file)
+- [10. Module](#10-module)
+- [10.1 Module](#101-module)
+- [10.2. `if __name__ = '__main__'`](#102-if-__name__--__main__)
+- [11. Lập trình hướng đối tượng (Object Oriented Programming - OOP).](#11-lập-trình-hướng-đối-tượng-object-oriented-programming---oop)
+- [11.1. Lớp (class).](#111-lớp-class)
+- [11.2. Constructor.](#112-constructor)
+- [11.3. Phương thức (method).](#113-phương-thức-method)
+    - [11.3.1. Instance method.](#1131-instance-method)
+    - [11.3.2. Static method:](#1132-static-method)
+    - [11.3.3. Class method:](#1133-class-method)
+    - [11.3.4. Magic methods (Dunder method).](#1134-magic-methods-dunder-method)
+- [11.4. Tính đóng gói (Encapsulation).](#114-tính-đóng-gói-encapsulation)
+    - [11.4.1. Ba mức truy cập của thuộc tính.](#1141-ba-mức-truy-cập-của-thuộc-tính)
+    - [11.4.2. Getter, Setter, Deleter.](#1142-getter-setter-deleter)
+- [11.5. Tính kế thừa (Inheritance).](#115-tính-kế-thừa-inheritance)
+- [11.6. Tính đa hình (Polymorphism).](#116-tính-đa-hình-polymorphism)
+    - [11.6.1. Đa hình qua kế thừa](#1161-đa-hình-qua-kế-thừa)
+    - [11.6.2. Đa hình không kế thừa (Duck Typing) 🦆](#1162-đa-hình-không-kế-thừa-duck-typing-)
+- [11.7. Tình trừu tượng (Abstraction).](#117-tình-trừu-tượng-abstraction)
+
 
 
 ## 1. Chương trình đầu tiên
@@ -906,7 +921,7 @@ for car in [car1, car2, car3, car4, car5]:
 
 ### 11.3. Phương thức (method).
 
-#### 11.3.1. Method.
+#### 11.3.1. Instance method.
 ```python
 class Car:
     def __init__(self, brand, model, year):
@@ -970,6 +985,86 @@ class Car:
 car = Car.from_string("Honda, Accord, 2021")
 print(car) # 2021 Honda Accord
 ```
+
+#### 11.3.4. Magic methods (Dunder method).
+
+Là những phương thức đặc biệt được định nghĩa trong các lớp để cung cấp các hành vi mặc định cho các phép toán hoặc hoạt động đặc biệt. 
+
+Chúng thường được nhận dạng bằng việc có hai dấu gạch dưới ở cả trước và sau tên phương thức, ví dụ như `__init__`, `__str__`, `__add__`, v.v.
+
+Một số magic methods phổ biến:
+
+1. `__init__`: constructor.
+
+```python
+class Car:
+    def __init__(self, brand, model, year, price):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.price = price
+```
+
+2. `__str__`: Được gọi khi bạn in đối tượng.
+
+```python
+class Car:
+    def __init__(self, brand, model, year, price):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.price = price
+
+    def __str__(self):
+        return f"{self.year} {self.brand} {self.model} {self.price}"
+
+car1 = Car("Toyota", "Camry", 2022, 50000)
+print(car1)
+# <__main__.Car object at 0x0000023D4F78D330> nếu không có __str__
+# 2022 Toyota Camry 50000 nếu có __str__
+```
+
+3. `__eq__`: Được gọi khi bạn dùng toán tử so sánh `==` với đối tượng của lớp.
+
+```python
+class Car:
+    def __init__(self, brand, model, year, price):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.price = price
+
+    def __eq__(self, other):
+        return self.year == other.year
+
+car1 = Car("Toyota", "Camry", 2022, 50000)
+car2 = Car("Honda", "Accord", 2021, 80000)
+
+print(car1 == car2) # False
+```
+
+4. `__add__`: Được gọi khi bạn dùng toán tử + với đối tượng của lớp.
+
+```python
+class Car:
+    def __init__(self, brand, model, year, price):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.price = price
+
+    def __add__(self, other):
+        return self.price + other.price
+
+car1 = Car("Toyota", "Camry", 2022, 50000)
+car2 = Car("Honda", "Accord", 2021, 80000)
+
+print(car1 + car2) # 130000
+```
+
+5. `__lt__`: Được gọi khi bạn dùng toán tử so sánh `<` với đối tượng của lớp.
+
+6. `__gt__`: Được gọi khi bạn dùng toán tử so sánh `>` với đối tượng của lớp.
 
 ### 11.4. Tính đóng gói (Encapsulation).
 
