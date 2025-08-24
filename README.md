@@ -186,7 +186,7 @@ height: float = 1.65
 
 ```python
 name = 'Python'
-name: str = 'Python
+name: str = 'Python'
 ```
 
 Chuỗi có nhiều kiểu định dạng khác nhau.
